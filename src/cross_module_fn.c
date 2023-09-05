@@ -194,6 +194,13 @@ job_execute_default_fn(BgwJob *job)
 }
 
 static bool
+does_node_perform_agg_internally(PlannerInfo *root, AggPath *aggregation_path, Path *subpath)
+{
+	/* Don't skip adding the agg node on top of the path */
+	return false;
+}
+
+static bool
 process_compress_table_default(AlterTableCmd *cmd, Hypertable *ht,
 							   WithClauseResult *with_clause_options)
 {
@@ -474,6 +481,8 @@ TSDLLEXPORT CrossModuleFunctions ts_cm_functions_default = {
 	.policies_remove_all = error_no_default_fn_pg_community,
 	.policies_alter = error_no_default_fn_pg_community,
 	.policies_show = error_no_default_fn_pg_community,
+
+	.does_node_perform_agg_internally = does_node_perform_agg_internally,
 
 	.partialize_agg = error_no_default_fn_pg_community,
 	.finalize_agg_sfunc = error_no_default_fn_pg_community,

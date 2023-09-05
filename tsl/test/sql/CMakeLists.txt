@@ -28,7 +28,8 @@ set(TEST_FILES
     partialize_finalize.sql
     reorder.sql
     skip_scan.sql
-    size_utils_tsl.sql)
+    size_utils_tsl.sql
+    vectorized_aggregation.sql)
 
 if(ENABLE_MULTINODE_TESTS)
   list(APPEND TEST_FILES dist_param.sql dist_views.sql)

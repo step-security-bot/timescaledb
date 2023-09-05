@@ -99,6 +99,10 @@ typedef struct CrossModuleFunctions
 	void (*ddl_command_end)(EventTriggerData *command);
 	void (*sql_drop)(List *dropped_objects);
 
+	/* Vectorized queries */
+	bool (*does_node_perform_agg_internally)(PlannerInfo *root, AggPath *aggregation_path,
+											 Path *subpath);
+
 	/* Continuous Aggregates */
 	PGFunction partialize_agg;
 	PGFunction finalize_agg_sfunc;
