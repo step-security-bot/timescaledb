@@ -17,6 +17,9 @@ name: Regression
       - '**.md'
       - 'LICENSE*'
       - NOTICE
+permissions:
+  contents: read
+
 jobs:
   matrixbuilder:
     runs-on: ubuntu-latest

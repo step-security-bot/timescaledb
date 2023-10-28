@@ -10,6 +10,9 @@ name: Windows Packages
     branches:
     - release_test
 
+permissions:
+  contents: read
+
 jobs:
   config:
     runs-on: ubuntu-latest

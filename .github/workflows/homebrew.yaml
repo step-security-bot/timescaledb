@@ -10,6 +10,9 @@ name: Homebrew
     branches:
     - release_test
 
+permissions:
+  contents: read
+
 jobs:
   homebrew:
     name: Homebrew

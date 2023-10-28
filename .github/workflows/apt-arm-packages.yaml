@@ -9,6 +9,9 @@ name: APT ARM64 packages
     - '*'
     branches:
     - release_test
+permissions:
+  contents: read
+
 jobs:
   apt_tests:
     name: APT ARM64 ${{ matrix.image }} PG${{ matrix.pg }}

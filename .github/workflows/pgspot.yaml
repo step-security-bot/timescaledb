@@ -7,6 +7,9 @@ name: pgspot
       - main
       - prerelease_test
 
+permissions:
+  contents: read
+
 jobs:
   pgspot:
     runs-on: ubuntu-latest

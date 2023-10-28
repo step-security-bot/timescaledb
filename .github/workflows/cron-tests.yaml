@@ -4,6 +4,9 @@ name: Additional tests
     branches:
       - main
       - prerelease_test
+permissions:
+  contents: read
+
 jobs:
   config:
     runs-on: ubuntu-latest

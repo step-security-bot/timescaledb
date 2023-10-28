@@ -6,6 +6,9 @@ name: Check for changelog entry file
     # we backport to the release branches, so these branches are included as
     # well.
     branches: ["main", "[0-9]+.[0-9]+.x"]
+permissions:
+  contents: read
+
 jobs:
   # Check if the PR creates a sperate file with changelog entry in the
   # ".unreleased"  folder

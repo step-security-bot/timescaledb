@@ -14,6 +14,9 @@ name: ABI Test
   push:
     branches:
       - prerelease_test
+permissions:
+  contents: read
+
 jobs:
   config:
     runs-on: ubuntu-latest

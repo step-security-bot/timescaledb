@@ -11,6 +11,9 @@ name: SQLsmith
   pull_request:
     paths: .github/workflows/sqlsmith.yaml
 
+permissions:
+  contents: read
+
 jobs:
   sqlsmith:
     # Change the JOB_NAME variable below when changing the name.

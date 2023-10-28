@@ -11,6 +11,9 @@ name: Libfuzzer
   pull_request:
     paths: .github/workflows/libfuzzer.yaml
 
+permissions:
+  contents: read
+
 jobs:
   fuzz:
     strategy:

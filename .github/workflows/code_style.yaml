@@ -5,6 +5,9 @@ name: Code style
       - main
       - prerelease_test
   pull_request:
+permissions:
+  contents: read
+
 jobs:
   cmake_checks:
     name: Check CMake files

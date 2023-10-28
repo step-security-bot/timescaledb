@@ -6,6 +6,9 @@ name: Coccinelle
     branches:
       - main
       - prerelease_test
+permissions:
+  contents: read
+
 jobs:
   coccinelle:
     name: Coccinelle

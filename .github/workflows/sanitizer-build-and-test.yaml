@@ -49,6 +49,9 @@ env:
 
   IGNORES: "bgw_db_scheduler bgw_db_scheduler_fixed"
   SKIPS: "remote_txn"
+permissions:
+  contents: read
+
 jobs:
   config:
     runs-on: ubuntu-latest
