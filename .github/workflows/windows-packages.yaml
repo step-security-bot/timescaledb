@@ -11,6 +11,9 @@ name: Windows Packages
     - release_test
     - trigger/windows_packages
 
+permissions:
+  contents: read
+
 jobs:
   config:
     runs-on: ubuntu-latest

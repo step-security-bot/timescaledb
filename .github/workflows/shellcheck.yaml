@@ -12,6 +12,9 @@ name: Shellcheck
     paths:
       - '**.sh'
       - .github/workflows/shellcheck.yaml
+permissions:
+  contents: read
+
 jobs:
   shellcheck:
     name: Shellcheck

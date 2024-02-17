@@ -17,6 +17,9 @@ name: Regression Linux i386
       - '**.md'
       - 'LICENSE*'
       - NOTICE
+permissions:
+  contents: read
+
 jobs:
   config:
     runs-on: ubuntu-latest

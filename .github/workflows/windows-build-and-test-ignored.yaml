@@ -21,6 +21,9 @@ name: Regression Windows
       - 'LICENSE*'
       - NOTICE
       - 'bootstrap*'
+permissions:
+  contents: read
+
 jobs:
   config:
     runs-on: ubuntu-latest

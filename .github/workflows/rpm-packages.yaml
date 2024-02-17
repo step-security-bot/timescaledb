@@ -11,6 +11,9 @@ name: RPM packages
     - release_test
     - trigger/package_test
 
+permissions:
+  contents: read
+
 jobs:
   rpm_tests:
     name: RPM ${{ matrix.image }} PG${{ matrix.pg }} ${{ matrix.license }}

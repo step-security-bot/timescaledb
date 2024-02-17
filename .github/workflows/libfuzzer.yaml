@@ -13,6 +13,9 @@ name: Libfuzzer
       - .github/workflows/libfuzzer.yaml
       - 'tsl/test/fuzzing/compression/**'
 
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-22.04

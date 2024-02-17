@@ -17,6 +17,9 @@ name: ABI Test
       - trigger/abi
   pull_request:
     paths: .github/workflows/abi.yaml
+permissions:
+  contents: read
+
 jobs:
   config:
     runs-on: ubuntu-latest

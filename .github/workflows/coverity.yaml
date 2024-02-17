@@ -6,6 +6,9 @@ name: Coverity
   push:
     branches:
       - coverity_scan
+permissions:
+  contents: read
+
 jobs:
 
   coverity:

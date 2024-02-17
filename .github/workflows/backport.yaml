@@ -17,6 +17,9 @@ on:
       # branches that are not main, so it's inconvenient.
       - backport/trigger
 
+permissions:
+  contents: read
+
 jobs:
   backport:
     name: Backport Bug Fixes

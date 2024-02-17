@@ -11,6 +11,9 @@ name: Homebrew
     - release_test
     - trigger/package_test
 
+permissions:
+  contents: read
+
 jobs:
   homebrew:
     name: Homebrew

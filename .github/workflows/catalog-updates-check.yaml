@@ -2,6 +2,9 @@ name: Check for unsafe catalog updates
 "on":
   pull_request:
     types: [opened, synchronize, reopened, edited]
+permissions:
+  contents: read
+
 jobs:
   check_catalog_correctly_updated:
     name: Check updates to latest-dev and reverse-dev are properly handled by PR

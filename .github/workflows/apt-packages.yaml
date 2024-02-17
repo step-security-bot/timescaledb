@@ -10,6 +10,9 @@ name: APT packages
     branches:
     - release_test
     - trigger/package_test
+permissions:
+  contents: read
+
 jobs:
   apt_tests:
     name: APT ${{ matrix.image }} PG${{ matrix.pg }} ${{ matrix.license }}

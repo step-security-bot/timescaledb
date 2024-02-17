@@ -5,6 +5,9 @@ name: Test Update and Downgrade
       - main
       - prerelease_test
   pull_request:
+permissions:
+  contents: read
+
 jobs:
   config:
     runs-on: ubuntu-latest
